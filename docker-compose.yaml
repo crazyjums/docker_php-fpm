@@ -1,0 +1,15 @@
+version: "3"
+services:
+  php-fpm:
+    image: crazyjums/php-fpm
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-fpm
+    ports:
+      - 9000:9000
+    tty: true
+    volumes:
+      - ./php/php-fpm.conf:/usr/local/php/etc/php-fpm.conf
+      - ./php/php-fpm.d:/usr/local/php/etc/php-fpm.d/
+      - ./nginx/html/php_nginx:/app/php_nginx # 这里存放的php代码，需要和nginx配置文件中root文件夹中文件保持一致
