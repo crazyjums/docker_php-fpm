@@ -1,17 +1,21 @@
+# Desc
+
+This is a docker image with php extensions which is yaf and redis.
+
 # Start
 
 - build by yourself
 
 ```bash
-git clone https://github.com/crazyjums/docker_php-fpm.git
+git clone https://github.com/crazyjums/docker_php-fpm.git -b php-fpm-with-ext
 cd docker_php-fpm
 docker build -t <image_name> .
 ```
 
-- pull from [hub.dokcer.com](https://hub.docker.com/r/crazyjums/php-fpm)
+- pull from [hub.dokcer.com](https://hub.docker.com/r/crazyjums/php-fpm-with-ext)
 
 ```bash
-docker pull crazyjums/php-fpm
+docker pull crazyjums/php-fpm-with-ext
 ```
 
 # File Map
