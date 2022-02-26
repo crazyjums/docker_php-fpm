@@ -1,6 +1,7 @@
 # Desc
 
 This is a docker image with php extensions which is yaf and redis.
+This image is based on php:7.4-fpm-alpine.
 
 # Start
 
@@ -20,10 +21,11 @@ docker pull crazyjums/php-fpm-with-ext
 
 # File Map
 
-- app path: `/app`
-- php-fpm.conf path: `/usr/local/php/etc/php-fpm.conf`
-- php-fpm.d path: `/usr/local/php/etc/php-fpm.d`
+- app path: `/var/www/html`
+- conf.d: `/usr/local/etc/php/conf.d`
+- php.ini-development: `/usr/local/etc/php/php.ini-development`
+- php.ini-production: `/usr/local/etc/php/php.ini-production`
 
 # Dockerhub
 
-- [crazyjums | dockerhub](https://hub.docker.com/r/crazyjums/)
+- [crazyjums | dockerhub](https://hub.docker.com/r/crazyjums/php-fpm-with-ext)
