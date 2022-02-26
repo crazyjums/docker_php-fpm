@@ -25,6 +25,8 @@ docker pull crazyjums/php-fpm-with-ext
 - conf.d: `/usr/local/etc/php/conf.d`
 - php.ini-development: `/usr/local/etc/php/php.ini-development`
 - php.ini-production: `/usr/local/etc/php/php.ini-production`
+- php-fpm.conf: `/usr/local/etc/php-fpm.conf`
+- php-fpm.d: `/usr/local/etc/php-fpm.d`
 
 # Dockerhub
 

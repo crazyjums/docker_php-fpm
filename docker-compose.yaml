@@ -5,9 +5,14 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: php-fpm
+    container_name: php-fpm2
     ports:
       - 9000:9000
     tty: true
     volumes:
       - ./nginx/html/php_nginx:/var/www/html/php_nginx # 这里存放的php代码，需要和nginx配置文件中root文件夹中文件保持一致
+      - ./php/php-fpm.d:/usr/local/etc/php-fpm.d
+      - ./php/php-fpm.conf:/usr/local/etc/php-fpm.conf
+      - ./php/php.conf.d:/usr/local/etc/php/conf.d
+      - ./php/php.ini-development:/usr/local/etc/php/php/php.ini-development
+      - ./php/php.ini-production:/usr/local/etc/php/php/php.ini-production
