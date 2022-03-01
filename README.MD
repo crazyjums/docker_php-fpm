@@ -22,4 +22,4 @@ docker pull crazyjums/php-fpm
 
 # Dockerhub
 
-- [crazyjums | dockerhub](https://hub.docker.com/r/crazyjums/)
+- [dockerhub](https://hub.docker.com/r/crazyjums/)
