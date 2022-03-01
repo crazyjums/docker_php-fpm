@@ -13,10 +13,10 @@ cd docker_php-fpm
 docker build -t <image_name> .
 ```
 
-- pull from [hub.dokcer.com](https://hub.docker.com/r/crazyjums/php-fpm-with-ext)
+- pull from [hub.dokcer.com](https://hub.docker.com/r/crazyjums/php-fpm/tags)
 
 ```bash
-docker pull crazyjums/php-fpm-with-ext
+docker pull crazyjums/php-fpm:with-ext
 ```
 
 # File Map
@@ -30,4 +30,4 @@ docker pull crazyjums/php-fpm-with-ext
 
 # Dockerhub
 
-- [crazyjums | dockerhub](https://hub.docker.com/r/crazyjums/php-fpm-with-ext)
+- [dockerhub](https://hub.docker.com/r/crazyjums/php-fpm)

@@ -1,11 +1,11 @@
 version: "3"
 services:
   php-fpm:
-    image: crazyjums/php-fpm-with-ext
+    image: crazyjums/php-fpm:with-ext
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: php-fpm2
+    container_name: php-fpm-with-ext
     ports:
       - 9000:9000
     tty: true
